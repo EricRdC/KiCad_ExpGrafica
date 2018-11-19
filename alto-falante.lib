@@ -1,0 +1,21 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# Alto-Falante
+#
+DEF Alto-Falante AF 0 40 Y Y 1 F N
+F0 "AF" 450 0 60 H V C CNN
+F1 "Alto-Falante" -350 -200 60 H V C CNN
+F2 "" -500 -200 60 H V C CNN
+F3 "" -500 -200 60 H V C CNN
+DRAW
+T 0 -150 100 60 0 0 0 +  Normal 0 C C
+T 0 -150 -100 60 0 0 0 -  Normal 0 C C
+S -150 50 150 -50 0 1 0 N
+P 4 0 1 0  150 50  300 200  300 -200  150 -50 N
+X ~ ~ 0 -250 200 U 50 50 1 1 B
+X ~ ~ 0 250 200 D 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+#End Library
