@@ -1,0 +1,36 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# Alto-Falante
+#
+DEF Alto-Falante AF 0 40 Y Y 1 F N
+F0 "AF" 450 0 60 H V C CNN
+F1 "Alto-Falante" -300 0 60 H V C CNN
+F2 "" -500 -200 60 H V C CNN
+F3 "" -500 -200 60 H V C CNN
+DRAW
+T 0 0 100 60 0 0 0 +  Normal 0 C C
+T 0 0 -100 60 0 0 0 -  Normal 0 C C
+S 0 50 150 -50 0 1 0 N
+P 4 0 1 10  150 50  250 150  250 -150  150 -50 N
+X ~ ~ 100 -250 200 U 50 50 1 1 B
+X ~ ~ 100 250 200 D 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# Microfone
+#
+DEF Microfone M 0 40 Y Y 1 F N
+F0 "M" 150 0 39 H V C CNN
+F1 "Microfone" -150 0 39 V V C CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+C 0 0 100 0 1 0 N
+P 2 0 1 0  -100 100  -100 -100 N
+X + ~ 0 250 150 D 50 31 1 1 B
+X - ~ 0 -250 150 U 50 31 1 1 B
+ENDDRAW
+ENDDEF
+#
+#End Library
