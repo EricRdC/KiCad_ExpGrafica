@@ -28,8 +28,8 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:alto-falante
 LIBS:Componentes
+LIBS:alto-falante
 LIBS:Circuito Exp-cache
 EELAYER 25 0
 EELAYER END
@@ -51,18 +51,18 @@ U 1 1 5BF40486
 P 6050 5200
 F 0 "C2" H 6075 5300 50  0000 L CNN
 F 1 "100nF" H 6075 5100 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:C_Radial_D8_L11.5_P3.5" H 6088 5050 50  0001 C CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D7.5_P5" H 6088 5050 50  0001 C CNN
 F 3 "" H 6050 5200 50  0000 C CNN
 	1    6050 5200
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP1 CP1
+L CP1 CP2
 U 1 1 5BF404EB
 P 7200 4850
-F 0 "CP1" H 7225 4950 50  0000 L CNN
+F 0 "CP2" H 7225 4950 50  0000 L CNN
 F 1 "220uF" H 7225 4750 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:C_Radial_D8_L11.5_P3.5" H 7200 4850 50  0001 C CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D7.5_L11.2_P2.5" H 7200 4850 50  0001 C CNN
 F 3 "" H 7200 4850 50  0001 C CNN
 	1    7200 4850
 	1    0    0    -1  
@@ -73,7 +73,7 @@ U 1 1 5BF40560
 P 8300 2700
 F 0 "SW1" H 8300 2800 50  0000 C CNN
 F 1 "SPST" H 8300 2600 50  0000 C CNN
-F 2 "" H 8300 2700 50  0000 C CNN
+F 2 "Buttons_Switches_ThroughHole:SW_DIP_x1_Slide" H 8300 2700 50  0001 C CNN
 F 3 "" H 8300 2700 50  0000 C CNN
 	1    8300 2700
 	0    1    1    0   
@@ -84,7 +84,7 @@ U 1 1 5BF40633
 P 6000 4000
 F 0 "P1" H 6000 4250 50  0000 C CNN
 F 1 "DIL8" V 6000 4000 50  0000 C CNN
-F 2 "" H 6000 4000 50  0000 C CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm_LongPads" H 6000 4000 50  0001 C CNN
 F 3 "" H 6000 4000 50  0000 C CNN
 	1    6000 4000
 	0    1    1    0   
@@ -95,7 +95,7 @@ U 1 1 5BF406BF
 P 8300 3650
 F 0 "BT1" H 8400 3700 50  0000 L CNN
 F 1 "6V" H 8400 3600 50  0000 L CNN
-F 2 "" V 8300 3690 50  0000 C CNN
+F 2 "Connect:AK300-2" V 8300 3690 50  0001 C CNN
 F 3 "" V 8300 3690 50  0000 C CNN
 	1    8300 3650
 	1    0    0    -1  
@@ -139,18 +139,18 @@ U 1 1 5BF41348
 P 4300 2700
 F 0 "C1" H 4325 2800 50  0000 L CNN
 F 1 "100nF" H 4325 2600 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:C_Radial_D8_L11.5_P3.5" H 4338 2550 50  0001 C CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D7.5_P5" H 4338 2550 50  0001 C CNN
 F 3 "" H 4300 2700 50  0000 C CNN
 	1    4300 2700
 	0    1    1    0   
 $EndComp
 $Comp
-L CP1 CP2
-U 1 1 5BF41A72
+L CP1 CP1
+U 1 1 5BFBCDB7
 P 6500 4250
-F 0 "CP2" H 6525 4350 50  0000 L CNN
+F 0 "CP1" H 6525 4350 50  0000 L CNN
 F 1 "10uF" H 6525 4150 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:C_Radial_D8_L11.5_P3.5" H 6500 4250 50  0001 C CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D5_L11_P2" H 6500 4250 50  0001 C CNN
 F 3 "" H 6500 4250 50  0001 C CNN
 	1    6500 4250
 	1    0    0    -1  
@@ -183,16 +183,11 @@ Wire Wire Line
 Wire Wire Line
 	6050 3600 6700 3600
 Wire Wire Line
-	6700 3600 6700 5750
-Wire Wire Line
 	5950 3650 5950 3250
 Wire Wire Line
 	5950 3250 4950 3250
-Connection ~ 6700 5750
 Wire Wire Line
 	6050 4350 6050 5050
-Wire Wire Line
-	6050 5350 6050 5750
 Wire Wire Line
 	4800 3100 4800 2700
 Wire Wire Line
@@ -204,12 +199,6 @@ Wire Wire Line
 Connection ~ 7750 2200
 Wire Wire Line
 	8300 3200 8300 3500
-Wire Wire Line
-	8300 5750 8300 3800
-Connection ~ 7200 5750
-Wire Wire Line
-	7750 5750 7750 3800
-Connection ~ 7750 5750
 Wire Wire Line
 	5850 4350 5850 4700
 Wire Wire Line
@@ -223,20 +212,6 @@ Wire Wire Line
 	5700 4500 5700 2200
 Connection ~ 5700 2200
 Connection ~ 4150 2700
-$Comp
-L Microfone M1
-U 1 1 5BF41620
-P 4150 3250
-F 0 "M1" H 4300 3250 39  0001 C CNN
-F 1 "Microfone" V 4000 3250 59  0000 C CNN
-F 2 "" H 4150 3250 60  0000 C CNN
-F 3 "" H 4150 3250 60  0000 C CNN
-	1    4150 3250
-	1    0    0    -1  
-$EndComp
-Connection ~ 6050 5750
-Wire Wire Line
-	4800 5750 8300 5750
 Wire Wire Line
 	4800 3400 4800 5750
 Wire Wire Line
@@ -245,19 +220,48 @@ Wire Wire Line
 	4150 3500 4150 3650
 Wire Wire Line
 	4150 2200 4150 3000
+Wire Wire Line
+	7200 5000 7200 5150
+Wire Wire Line
+	4150 3000 3800 3000
+Wire Wire Line
+	3800 3500 4150 3500
 $Comp
-L Alto-Falante Alto-Falante
-U 1 1 5BF41A72
+L Microfone M1
+U 1 1 5BFBEC14
+P 3800 3250
+F 0 "M1" H 3950 3250 39  0000 C CNN
+F 1 "Microfone" V 3650 3250 39  0000 C CNN
+F 2 "Microfone:Microfone" H 3800 3250 60  0001 C CNN
+F 3 "" H 3800 3250 60  0000 C CNN
+	1    3800 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Alto-Falante AF1
+U 1 1 5BFBF49A
 P 7100 5400
-F 0 "Alto-Falante" V 7050 5400 60  0000 C CNN
-F 1 "8R" H 7450 5400 60  0000 C CNN
-F 2 "" H 6600 5200 60  0000 C CNN
+F 0 "AF1" H 7550 5400 60  0000 C CNN
+F 1 "Alto-Falante" H 6800 5400 60  0000 C CNN
+F 2 "Connect:AK300-2" H 6600 5200 60  0001 C CNN
 F 3 "" H 6600 5200 60  0000 C CNN
 	1    7100 5400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7200 5000 7200 5150
+	4800 5750 8300 5750
+Wire Wire Line
+	6050 5750 6050 5350
 Wire Wire Line
 	7200 5750 7200 5650
+Connection ~ 6050 5750
+Wire Wire Line
+	6700 3600 6700 5750
+Connection ~ 6700 5750
+Wire Wire Line
+	7750 5750 7750 3800
+Connection ~ 7200 5750
+Wire Wire Line
+	8300 5750 8300 3800
+Connection ~ 7750 5750
 $EndSCHEMATC

@@ -1,4 +1,4 @@
-update=Ter 20 Nov 2018 12:08:24 -02
+update=Seg 26 Nov 2018 11:03:07 -02
 version=1
 last_client=kicad
 [pcbnew]
@@ -58,5 +58,5 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=alto-falante
-LibName31=Componentes
+LibName30=Componentes
+LibName31=alto-falante
